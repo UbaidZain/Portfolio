@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+header {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 2px;
+  background: linear-gradient(to right, rgb(0, 0, 66), rgb(20, 169, 243));
+}
+.nav {
+  height: 50px;
+  padding: 0.5rem auto;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Inter", sans-serif;
+}
+.nav-link {
+  list-style: none;
+}
+.nav-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.home-banner-container {
+  height: 80vh;
+  background: linear-gradient(to right, rgb(0, 0, 66), rgb(20, 169, 243));
+  padding: 3rem;
+}
+.home-banner {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.home-banner-img-container,
+.home-banner-txt {
+  width: 45%;
+
+  height: 90%;
+}
+.home-banner-txt {
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  color: white;
+}
+.banner-head {
+  color: #0473b4;
+
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+}
+.banner-name {
+  color: #caf0f8;
+
+  font-family: "Abril Fatface", serif;
+  font-size: 5rem;
+}
+
+.banner-footer {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.home-banner-img {
+  width: 300px;
+  height: 300px;
+  object-position: top;
+  object-fit: cover;
+  border-radius: 300px;
+  filter: grayscale(1);
+  box-shadow: rgba(0, 0, 66, 1) 0px 0px 20px;
+}
+@media (max-width: 850px) {
+  .home-banner-img {
+    width: 250px;
+    height: 250px;
+    object-position: top;
+    object-fit: cover;
+    border-radius: 300px;
+  }
+}
