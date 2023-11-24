@@ -35,6 +35,9 @@ body {
   text-decoration: none;
   color: white;
 }
+.nav-link a:hover {
+  color: #0473b4;
+}
 
 .home-banner-container {
   height: 90vh;
@@ -121,9 +124,12 @@ body {
   }
 }
 .about-me-container,
-.projects-container {
+.projects-container,
+.contact-form-container,
+footer {
   margin-top: 6rem;
 }
+
 .about-me-txt-container {
   flex-direction: column;
   gap: 1rem;
@@ -145,7 +151,6 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   background: #3d5a80;
-  /* background: #0473b4; */
 }
 .about-me-txt-main,
 .about-me-txt-side {
@@ -185,14 +190,18 @@ body {
   }
 }
 .projects-container,
-.about-me-container {
-  border-top: 4px dashed #3d5a80;
+.about-me-container,
+.contact-form-container,
+.footer-wrapper {
+  border-top: 1px solid #3d5a80;
 }
-.project-title {
+.project-title,
+.link-title {
   font-weight: 400;
   font-size: 1.5rem;
 }
-.project-title a {
+.project-title a,
+.link-title {
   text-decoration: none;
   color: #3d5a80;
 }
@@ -242,4 +251,74 @@ body {
     color: #0473b4;
     font-size: 0.85rem;
   }
+}
+.contact-form,
+.footer-top,
+.footer-bottom {
+  margin-top: 3rem;
+}
+.contact-form,
+.input-container {
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-input {
+  height: 40px;
+  padding: 0.5rem;
+  width: 60%;
+  max-width: 400px;
+}
+.contact-form textarea {
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .input-container {
+    flex-direction: row;
+  }
+  .contact-input {
+    width: 50%;
+  }
+}
+.submit {
+  height: 40px;
+  width: 100px;
+  font-size: 1.5rem;
+  appearance: none;
+  border: none;
+  background-color: rgb(0, 0, 44);
+  color: white;
+}
+.submit:hover,
+.submit:focus {
+  color: rgb(0, 0, 44);
+  background-color: #98c1d9;
+}
+
+.footer-link {
+  margin-left: 1rem;
+  list-style: none;
+}
+.footer-email .footer-link {
+  margin: 0;
+}
+.footer-link a {
+  font-size: 2rem;
+  color: #3d5a80;
+}
+
+.footer-link a:hover {
+  color: rgb(0, 0, 44);
+}
+.footer-top {
+  width: 100%;
+}
+.footer-bottom {
+  width: 100vw;
+  height: 60px;
+  background: linear-gradient(to right, rgb(0, 0, 44), rgb(20, 169, 243));
+  color: white;
+  text-align: center;
+}
+.footer-title {
+  font-weight: 400;
 }
