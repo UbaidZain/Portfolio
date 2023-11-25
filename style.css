@@ -268,6 +268,9 @@ footer {
   width: 60%;
   max-width: 400px;
 }
+.contact-form .is-active {
+  color: red;
+}
 .contact-form textarea {
   width: 80%;
 }
