@@ -3,34 +3,36 @@ const nameInput = document.getElementById("nameinput");
 const emailInput = document.getElementById("emailinput");
 
 contactForm.addEventListener("submit", formValidation);
+function addError(element, message) {
+  let nextElement = element.nextElementSibling;
+  nextElement.innerHTML = message;
 
+  nextElement.classList.add("error");
+}
+function removeError(element) {
+  let nextElement = element.nextElementSibling;
+  nextElement.innerHTML = "";
+
+  nextElement.classList.remove("error");
+}
 function formValidation(e) {
   e.preventDefault();
-  if (
-    nameInput.value === "" ||
-    nameInput.value === null ||
-    nameInput.value === undefined
-  ) {
-    nameInput.value = "Please enter a name";
-    nameInput.classList.add("is-active");
 
+  //  Name  validation //
+  if (nameInput.value === "" || nameInput.value === undefined) {
+    addError(nameInput, "Please enter a name");
     return;
   } else {
-    nameInput.value = nameInput.value;
-    nameInput.classList.remove("is-active");
+    removeError(nameInput);
   }
-  if (
-    emailInput.value === "" ||
-    emailInput.value === null ||
-    emailInput.value === undefined
-  ) {
-    emailInput.value = "Please enter an email address";
-    emailInput.classList.add("is-active");
 
+  // Email validation //
+  if (emailInput.value === "" || emailInput.value === undefined) {
+    addError(emailInput, "Please enter an email address");
     return;
   } else {
-    emailInput.value = emailInput.value;
-    emailInput.classList.remove("is-active");
+    removeError(emailInput);
   }
+
   contactForm.reset();
 }

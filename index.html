@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700;600;500;900&family=Inter:wght@400;700&family=Poppins&family=WindSong&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700;600;500;900&family=Inter:wght@400;500;600;700&family=Poppins&family=WindSong&display=swap"
       rel="stylesheet"
     />
     <link
@@ -54,20 +54,22 @@
         <h2 class="body-title">About me</h2>
         <div class="about-me-txt-container flex">
           <div class="about-me-txt-main flex center">
-            Hey, I'm Ubaid a front-end developer. I've been coding since last
-            year and have mastered technologies such as HTMl, CSS and
-            JavaScript. My designs focus on accessibility, SEO and on providing
-            the best solution according to your needs.
+            <p>
+              Hey, I'm Ubaid a front-end developer. I've been coding since last
+              year and have mastered technologies such as HTMl, CSS and
+              JavaScript. My designs focus on accessibility, SEO and on
+              providing the best solution according to your needs.
+            </p>
           </div>
           <div class="about-me-txt-side flex center">
             <div>
-              <h3 class="about-me-subtitle">Skills:</h3>
+              <h3 class="about-me-subtitle">Skills</h3>
               <li class="about-me-skill">Web Development</li>
               <li class="about-me-skill">SEO Optimisation</li>
               <li class="about-me-skill">Responsive Design</li>
             </div>
             <div>
-              <h3 class="about-me-subtitle">Languages:</h3>
+              <h3 class="about-me-subtitle">Languages</h3>
               <li class="about-me-skill">HTML</li>
               <li class="about-me-skill">CSS</li>
               <li class="about-me-skill">JavaScript</li>
@@ -86,10 +88,6 @@
                   Flappy Bird Clone
                 </a>
               </h3>
-              <p class="project-info">
-                This is a very simple example of how to build a web-version of
-                the Flappy Bird.
-              </p>
             </div>
           </div>
           <div class="project flex">
@@ -100,9 +98,6 @@
                   >School Website</a
                 >
               </h3>
-              <p class="project-info">
-                I made this website for an exibition in my school
-              </p>
             </div>
           </div>
           <div class="project flex">
@@ -117,9 +112,6 @@
                   Simple Calulator</a
                 >
               </h3>
-              <p class="project-info">
-                This is a simple calculator made with HTML, CSS and JavaScript
-              </p>
             </div>
           </div>
         </div>
@@ -129,18 +121,24 @@
 
         <form class="contact-form flex">
           <div class="input-container flex">
-            <input
-              type="text"
-              class="contact-input"
-              id="nameinput"
-              placeholder="Name"
-            />
-            <input
-              type="email"
-              class="contact-input"
-              id="emailinput"
-              placeholder="E-mail"
-            />
+            <div class="contact-input-container flex">
+              <input
+                type="text"
+                class="contact-input"
+                id="nameinput"
+                placeholder="Name"
+              />
+              <span></span>
+            </div>
+            <div class="contact-input-container flex">
+              <input
+                type="email"
+                class="contact-input"
+                id="emailinput"
+                placeholder="E-mail"
+              />
+              <span></span>
+            </div>
           </div>
 
           <textarea name="" id="contact-txt" cols="30" rows="10"></textarea>
@@ -172,7 +170,6 @@
               </a>
             </li>
           </ul>
-          <ul class="footer-links"></ul>
         </div>
       </div>
 
